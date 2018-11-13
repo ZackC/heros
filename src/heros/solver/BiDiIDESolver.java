@@ -109,7 +109,7 @@ public class BiDiIDESolver<N, D, M, V, I extends InterproceduralCFG<N, M>> {
 	}
 
 	/**
-	 *  Data structure used to identify which edges can be unpaused by a {@link SingleDirectionSolver}. Each {@link SingleDirectionSolver} stores 
+	 *  Data structure used to identify which edges can be unpaused by a  SingleDirectionSolver. Each SingleDirectionSolver stores
 	 *  its leaks using this structure. A leak always requires a flow from some {@link #sourceStmt} (this is either the statement used as initial seed
 	 *  or a call site of an unbalanced return) to a return site. This return site is always different for the forward and backward solvers,
 	 *  but, the related call site of these return sites must be the same, if two entangled flows exist. 
